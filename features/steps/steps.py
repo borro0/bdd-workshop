@@ -4,8 +4,6 @@ from behave import given, when, then, use_step_matcher
 from course import Course
 from datetime import datetime
 
-# GIVEN STEPS
-
 @given("there is a course with {count:d} registrations")
 def course_with_registrations(context, count):
     context.course = Course()
@@ -25,7 +23,3 @@ def step_impl(context):
 @then("the course has {count:d} registration")
 def step_impl(context, count):
     assert context.course.registrations == count
-
-# WHEN STEPS
-
-# THEN STEPS
