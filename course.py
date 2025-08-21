@@ -6,4 +6,4 @@ class Course:
         self.maximum = 0
 
     def register(self, name):
-        self.registrations += 1
+        pass
